@@ -37,12 +37,14 @@
             textBox1 = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            dateTimePicker1 = new DateTimePicker();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = SystemColors.GrayText;
+            groupBox1.BackColor = SystemColors.Control;
+            groupBox1.Controls.Add(dateTimePicker1);
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(label4);
@@ -51,13 +53,12 @@
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(14, 4);
+            groupBox1.Location = new Point(30, 26);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(5);
-            groupBox1.Size = new Size(1308, 731);
+            groupBox1.Size = new Size(1292, 703);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Visible = false;
             groupBox1.Enter += groupBox1_Enter;
             // 
             // button2
@@ -66,7 +67,7 @@
             button2.Location = new Point(675, 611);
             button2.Margin = new Padding(5);
             button2.Name = "button2";
-            button2.Size = new Size(120, 34);
+            button2.Size = new Size(120, 43);
             button2.TabIndex = 7;
             button2.Text = "Exit";
             button2.UseVisualStyleBackColor = true;
@@ -77,7 +78,7 @@
             button1.Location = new Point(433, 611);
             button1.Margin = new Padding(5);
             button1.Name = "button1";
-            button1.Size = new Size(120, 34);
+            button1.Size = new Size(120, 43);
             button1.TabIndex = 6;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = true;
@@ -139,6 +140,13 @@
             label1.TabIndex = 0;
             label1.Text = "Login page";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(921, 62);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -165,5 +173,6 @@
         private Button button1;
         private Label label4;
         private Button button2;
+        private DateTimePicker dateTimePicker1;
     }
 }
